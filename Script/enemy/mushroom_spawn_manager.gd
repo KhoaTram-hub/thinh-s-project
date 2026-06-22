@@ -30,11 +30,9 @@ func _ready() -> void:
 	fill_to_max()
 
 func _process(_delta: float) -> void:
-	# BƯỚC 3: DEBUG HIỆN SỐ LƯỢNG (Mỗi 1 giây in 1 lần)
-	if Engine.get_frames_drawn() % 60 == 0:
-		var current_count = get_tree().get_nodes_in_group("enemies").size()
-		print("ENEMIES: ", current_count, "/", max_enemies)
-
+	if not is_inside_tree() or get_tree() == null:
+		return
+	
 func _on_timer_timeout() -> void:
 	# BƯỚC 4: KHI CHẾT (DƯỚI 30) TỰ SPAWN BÙ
 	var current_count = get_tree().get_nodes_in_group("enemies").size()

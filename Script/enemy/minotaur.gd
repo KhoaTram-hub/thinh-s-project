@@ -160,6 +160,22 @@ func _die() -> void:
 	animated_sprite_2d.play("die_right")
 	set_collision_layer_value(3, false)
 	$CollisionShape2D.set_deferred("disabled", true)
+	reward_ap_to_player()
+	
+func reward_ap_to_player() -> void:
+	# Tìm nhân vật chính trong nhóm "player"
+	var players = get_tree().get_nodes_in_group("player")
+	if players.size() > 0:
+		var player = players[0]
+		
+		# Cộng AP cho player
+		if player.has_method("gain_ap"):
+			var ap_reward = 10.0
+			player.gain_ap(ap_reward)
+			
+			# Hiện chữ thông báo chuẩn pixel trên đầu player
+			if player.has_method("show_message"):
+				player.show_message("+ " + str(int(ap_reward)) + " AP", Color.CYAN)
 
 func update_hitbox_direction() -> void:
 	attack_area.scale.x = -1 if animated_sprite_2d.flip_h else 1

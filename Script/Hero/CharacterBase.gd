@@ -2,7 +2,7 @@ extends CharacterBody2D
 class_name CharacterBase # THÊM DÒNG NÀY ĐỂ CÁC FILE CON KẾ THỪA
 
 const BASE_SPEED = 500.0
-var speed = 500.0
+var speed = 800.0
 const KNOCKBACK_FORCE = 150.0 
 
 var health: int = 500
@@ -28,10 +28,6 @@ func _ready() -> void:
 func _physics_process(_delta: float) -> void:
 	if not is_alive: return
 
-	# Bấm R tăng AP dùng chung
-	if Input.is_action_just_pressed("charge_ap"):
-		gain_ap(20.0)
-		show_message("AP Increased! (+20)", Color.GREEN)
 
 	# Gọi hàm xử lý nút bấm của skill (con sẽ tự viết đè)
 	handle_skill_input()

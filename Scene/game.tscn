@@ -1,14 +1,16 @@
 [gd_scene format=3 uid="uid://b0pw4ow6joalf"]
 
 [ext_resource type="PackedScene" uid="uid://b5gddaejdf17x" path="res://Scene/hero.tscn" id="1_mhtsl"]
+[ext_resource type="Script" uid="uid://drqsufq6bw7uf" path="res://Script/Hero/SolidSteelCharacter.gd" id="2_ihreq"]
 [ext_resource type="PackedScene" uid="uid://53pws482rgg0" path="res://Scene/minotaur.tscn" id="2_w51g1"]
-[ext_resource type="PackedScene" uid="uid://p6fjxvs5e4gf" path="res://Scene/mushroom.tscn" id="3_4jv7b"]
 [ext_resource type="PackedScene" uid="uid://ymdpjvxh872b" path="res://Scene/swampling.tscn" id="4_ihreq"]
+[ext_resource type="PackedScene" uid="uid://qypryysh66h4" path="res://Scene/mushroom_spawn_manager.tscn" id="5_ihreq"]
 
 [node name="game" type="Node2D" unique_id=1710060906]
 
 [node name="Hero" parent="." unique_id=662806253 instance=ExtResource("1_mhtsl")]
 scale = Vector2(4, 4)
+script = ExtResource("2_ihreq")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=769054459]
 zoom = Vector2(0.2, 0.2)
@@ -19,14 +21,4 @@ position = Vector2(2285, -654)
 [node name="Swampling" parent="." unique_id=802053524 instance=ExtResource("4_ihreq")]
 position = Vector2(-2160.9998, 550.99994)
 
-[node name="Mushroom" parent="." unique_id=1585060271 instance=ExtResource("3_4jv7b")]
-position = Vector2(-1561.9999, -687.99994)
-
-[node name="Mushroom2" parent="." unique_id=1819229616 instance=ExtResource("3_4jv7b")]
-position = Vector2(-129.00012, -652)
-
-[node name="Mushroom3" parent="." unique_id=322290632 instance=ExtResource("3_4jv7b")]
-position = Vector2(1897.9999, 665.9999)
-
-[node name="Mushroom4" parent="." unique_id=51668431 instance=ExtResource("3_4jv7b")]
-position = Vector2(-58.00006, 995)
+[node name="MushroomSpawnManager" parent="." unique_id=975526276 instance=ExtResource("5_ihreq")]
