@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bdqry02f2h1bt"]
+
+[ext_resource type="Script" uid="uid://d0msgf6kyqck1" path="res://Script/enemy/swampling_spawn_manager.gd" id="1_4ppgc"]
+[ext_resource type="PackedScene" uid="uid://ymdpjvxh872b" path="res://Scene/swampling.tscn" id="2_sh5k5"]
+
+[node name="SwamplingSpawnManager" type="Node2D" unique_id=975526276]
+script = ExtResource("1_4ppgc")
+swampling_scene = ExtResource("2_sh5k5")
+
+[node name="Timer" type="Timer" parent="." unique_id=1193049684]
+wait_time = 5.0
+autostart = true
