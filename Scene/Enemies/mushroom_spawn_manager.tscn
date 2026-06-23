@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://qypryysh66h4"]
 
 [ext_resource type="Script" uid="uid://djq1lghptso8v" path="res://Script/enemy/mushroom_spawn_manager.gd" id="1_18h8o"]
-[ext_resource type="PackedScene" uid="uid://p6fjxvs5e4gf" path="res://Scene/mushroom.tscn" id="2_axbfj"]
+[ext_resource type="PackedScene" uid="uid://p6fjxvs5e4gf" path="res://Scene/Enemies/mushroom.tscn" id="2_axbfj"]
 
 [node name="MushroomSpawnManager" type="Node2D" unique_id=975526276]
 script = ExtResource("1_18h8o")

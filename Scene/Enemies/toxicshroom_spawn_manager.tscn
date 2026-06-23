@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b2cwfm776whmr"]
 
 [ext_resource type="Script" uid="uid://bbbwlkuqate77" path="res://Script/enemy/toxicshroom_spawn_manager.gd" id="1_x4ry7"]
-[ext_resource type="PackedScene" uid="uid://beeiad3pkh5ff" path="res://Scene/toxicshroom.tscn" id="2_3vbwl"]
+[ext_resource type="PackedScene" uid="uid://beeiad3pkh5ff" path="res://Scene/Enemies/toxicshroom.tscn" id="2_3vbwl"]
 
 [node name="ToxicShroomSpawnManager" type="Node2D" unique_id=975526276]
 script = ExtResource("1_x4ry7")

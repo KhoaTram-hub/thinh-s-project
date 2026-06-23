@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://clyxqyi1sv6hx" path="res://Asset/Enemy/Enemy3-Movement-In-Animation/Enemy3-Die.png" id="4_67trf"]
 [ext_resource type="Texture2D" uid="uid://dm45cgfigwsl3" path="res://Asset/Enemy/Enemy3-Movement-In-Animation/Enemy3-Idle.png" id="5_xitlc"]
 [ext_resource type="Texture2D" uid="uid://c1xmht4u4heem" path="res://Asset/Enemy/Enemy3-Movement-In-Animation/Enemy3-Fly.png" id="6_hwecr"]
-[ext_resource type="PackedScene" uid="uid://ymdpjvxh872b" path="res://Scene/swampling.tscn" id="8_upwjy"]
+[ext_resource type="PackedScene" uid="uid://ymdpjvxh872b" path="res://Scene/Enemies/swampling.tscn" id="8_upwjy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_w806v"]
 atlas = ExtResource("2_oij3j")

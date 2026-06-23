@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://b0pw4ow6joalf"]
 
 [ext_resource type="PackedScene" uid="uid://b5gddaejdf17x" path="res://Scene/hero.tscn" id="1_mhtsl"]
-[ext_resource type="PackedScene" uid="uid://53pws482rgg0" path="res://Scene/minotaur.tscn" id="2_w51g1"]
-[ext_resource type="PackedScene" uid="uid://ymdpjvxh872b" path="res://Scene/swampling.tscn" id="4_ihreq"]
-[ext_resource type="PackedScene" uid="uid://qypryysh66h4" path="res://Scene/mushroom_spawn_manager.tscn" id="5_ihreq"]
+[ext_resource type="PackedScene" uid="uid://53pws482rgg0" path="res://Scene/Enemies/minotaur.tscn" id="2_w51g1"]
+[ext_resource type="PackedScene" uid="uid://ymdpjvxh872b" path="res://Scene/Enemies/swampling.tscn" id="4_ihreq"]
+[ext_resource type="PackedScene" uid="uid://qypryysh66h4" path="res://Scene/Enemies/mushroom_spawn_manager.tscn" id="5_ihreq"]
 
 [node name="game" type="Node2D" unique_id=1710060906]
 
