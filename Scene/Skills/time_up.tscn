@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cfflun3eu7leh"]
+
+[ext_resource type="Script" uid="uid://psj3prieo5cm" path="res://Script/Hero/skills/time_up.gd" id="1_rntbw"]
+
+[node name="TimeUp" type="Node2D" unique_id=1278914207]
+script = ExtResource("1_rntbw")

@@ -1,5 +1,5 @@
 extends CharacterBody2D
-class_name CharacterBase # THÊM DÒNG NÀY ĐỂ CÁC FILE CON KẾ THỪA
+class_name CharacterBase 
 
 const BASE_SPEED = 500.0
 var speed = 800.0
@@ -9,11 +9,13 @@ var health: int = 500
 var is_alive: bool = true
 var is_attacking: bool = false
 var enemies_already_hit: Array = []
+var damage_output_factor: float = 1.0
 
 # --- QUAN TRỌNG: Giữ lại các biến dùng chung này ---
 var damage_reduction_factor: float = 1.0 
 var max_ap: float = 100.0
 var current_ap: float = 0.0
+
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var attack_area: Area2D = $AttackArea
@@ -69,6 +71,7 @@ func take_damage(damage: int, attacker_position: Vector2) -> void:
 	var final_damage = int(damage * damage_reduction_factor)
 	health -= final_damage
 	print(name, " nhận sát thương thực tế: ", final_damage)
+	print("Máu còn lại của Hero: ", health)
 	
 	if health <= 0:
 		_die()
@@ -141,5 +144,5 @@ func _on_attack_area_body_entered(body: Node2D) -> void:
 	if body.has_method("take_damage") and body != self:
 		if not enemies_already_hit.has(body):
 			enemies_already_hit.append(body) 
-			var current_damage = 500
+			var current_damage = int(500 * damage_output_factor)
 			body.take_damage(current_damage, global_position)

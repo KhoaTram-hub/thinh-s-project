@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://lqanr46t1ela"]
+
+[ext_resource type="Script" uid="uid://bh0lo4j5cnaij" path="res://Script/Hero/skills/vampire.gd" id="1_5bej3"]
+
+[node name="Vampire" type="Node2D" unique_id=1817985585]
+script = ExtResource("1_5bej3")

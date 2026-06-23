@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://duqvgqrtx67ku"]
+
+[ext_resource type="Script" uid="uid://dkvcj6nimmccb" path="res://Script/Hero/skills/solid_steel.gd" id="1_ojprw"]
+
+[node name="SolidSteel" type="Node2D" unique_id=1239926205]
+script = ExtResource("1_ojprw")

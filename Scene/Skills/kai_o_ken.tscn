@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://budo5kvudocql"]
+
+[ext_resource type="Script" uid="uid://c8itfntq43pd3" path="res://Script/Hero/skills/kai_o_ken.gd" id="1_cdro4"]
+
+[node name="KaiOKen" type="Node2D" unique_id=1179425227]
+script = ExtResource("1_cdro4")

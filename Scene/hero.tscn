@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://b5gddaejdf17x"]
 
-[ext_resource type="Script" uid="uid://bokl06b5swd6i" path="res://Scene/SpeedforceCharacter.gd" id="1_w7uy6"]
+[ext_resource type="Script" uid="uid://bl26at66yxhr6" path="res://Script/Hero/CharacterBase.gd" id="1_w7uy6"]
 [ext_resource type="Texture2D" uid="uid://cjri4h7tn4h1y" path="res://Asset/Hero/Player.png" id="2_w7uy6"]
+[ext_resource type="PackedScene" uid="uid://budo5kvudocql" path="res://Scene/Skills/kai_o_ken.tscn" id="3_s6j1m"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_w7uy6"]
 atlas = ExtResource("2_w7uy6")
@@ -248,6 +249,8 @@ collision_mask = 12
 position = Vector2(-41, -4)
 shape = SubResource("RectangleShape2D_w7uy6")
 disabled = true
+
+[node name="KaiOKen" parent="." unique_id=1179425227 instance=ExtResource("3_s6j1m")]
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]

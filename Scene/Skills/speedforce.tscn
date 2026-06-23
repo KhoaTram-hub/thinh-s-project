@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dlfdcbfvtvs5l"]
+
+[ext_resource type="Script" uid="uid://e6dlptcg8ptk" path="res://Script/Hero/skills/speedforce.gd" id="1_tcy7l"]
+
+[node name="Speedforce" type="Node2D" unique_id=1725269328]
+script = ExtResource("1_tcy7l")

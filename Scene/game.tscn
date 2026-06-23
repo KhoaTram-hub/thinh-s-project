@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://b0pw4ow6joalf"]
 
 [ext_resource type="PackedScene" uid="uid://b5gddaejdf17x" path="res://Scene/hero.tscn" id="1_mhtsl"]
-[ext_resource type="Script" uid="uid://drqsufq6bw7uf" path="res://Script/Hero/SolidSteelCharacter.gd" id="2_ihreq"]
 [ext_resource type="PackedScene" uid="uid://53pws482rgg0" path="res://Scene/minotaur.tscn" id="2_w51g1"]
 [ext_resource type="PackedScene" uid="uid://ymdpjvxh872b" path="res://Scene/swampling.tscn" id="4_ihreq"]
 [ext_resource type="PackedScene" uid="uid://qypryysh66h4" path="res://Scene/mushroom_spawn_manager.tscn" id="5_ihreq"]
@@ -10,7 +9,6 @@
 
 [node name="Hero" parent="." unique_id=662806253 instance=ExtResource("1_mhtsl")]
 scale = Vector2(4, 4)
-script = ExtResource("2_ihreq")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=769054459]
 zoom = Vector2(0.2, 0.2)
