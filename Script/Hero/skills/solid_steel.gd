@@ -27,6 +27,8 @@ func activate_solid_steel() -> void:
 	
 	var timer = get_tree().create_timer(7.0)
 	timer.timeout.connect(_on_solid_steel_timeout)
+	
+	print("Activate Solid Steel!!")
 
 func _on_solid_steel_timeout() -> void:
 	if player:

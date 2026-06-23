@@ -29,11 +29,6 @@ func _ready() -> void:
 	# BƯỚC 2: VÀO MAP SPAWN ĐỦ 30 CON BAN ĐẦU
 	fill_to_max()
 
-func _process(_delta: float) -> void:
-	# BƯỚC 3: DEBUG HIỆN SỐ LƯỢNG (Mỗi 1 giây in 1 lần)
-	if Engine.get_frames_drawn() % 60 == 0:
-		var current_count = get_tree().get_nodes_in_group("enemies").size()
-		print("ENEMIES: ", current_count, "/", max_enemies)
 
 func _on_timer_timeout() -> void:
 	# BƯỚC 4: KHI CHẾT (DƯỚI 30) TỰ SPAWN BÙ

@@ -161,6 +161,7 @@ func _die() -> void:
 	set_collision_layer_value(3, false)
 	$CollisionShape2D.set_deferred("disabled", true)
 	reward_ap_to_player()
+	ScoreManager.add_score(40)
 	
 func reward_ap_to_player() -> void:
 	# Tìm nhân vật chính trong nhóm "player"
@@ -170,7 +171,7 @@ func reward_ap_to_player() -> void:
 		
 		# Cộng AP cho player
 		if player.has_method("gain_ap"):
-			var ap_reward = 10.0
+			var ap_reward = 35.0
 			player.gain_ap(ap_reward)
 			
 			# Hiện chữ thông báo chuẩn pixel trên đầu player

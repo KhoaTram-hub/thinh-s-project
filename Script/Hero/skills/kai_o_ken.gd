@@ -32,6 +32,8 @@ func activate_kaioken() -> void:
 	
 	var timer = get_tree().create_timer(15.0)
 	timer.timeout.connect(_on_kaioken_timeout)
+	
+	print("Activate Kai o Ken!!")
 
 func _on_kaioken_timeout() -> void:
 	if player:

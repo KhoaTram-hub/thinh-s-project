@@ -88,6 +88,7 @@ func _die() -> void:
 	set_collision_layer_value(3, false) 
 	$CollisionShape2D.set_deferred("disabled", true)
 	reward_ap_to_player()
+	ScoreManager.add_score(10)
 
 func process_animation() -> void:
 	if not is_alive: return

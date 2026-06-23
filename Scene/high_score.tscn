@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://c6py8h1kpll7k"]
+
+[ext_resource type="Script" uid="uid://b2bnqgkc5u57o" path="res://Script/score_manager.gd" id="1_kdxub"]
+
+[node name="HighScore" type="Node2D" unique_id=386983075]
+script = ExtResource("1_kdxub")

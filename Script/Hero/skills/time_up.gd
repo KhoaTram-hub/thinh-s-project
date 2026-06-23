@@ -32,6 +32,8 @@ func activate_times_up() -> void:
 			if enemy.has_node("AnimatedSprite2D"):
 				enemy.get_node("AnimatedSprite2D").pause() # Dừng luôn hoạt ảnh animation của quái
 				
+	print("Activate Time's Up!!!")			
+				
 	var timer = get_tree().create_timer(5.0)
 	timer.timeout.connect(_on_times_up_timeout)
 

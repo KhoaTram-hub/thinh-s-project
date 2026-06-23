@@ -37,6 +37,8 @@ func activate_speedforce() -> void:
 	# Tạo bộ đếm thời gian tồn tại chiêu
 	var timer = get_tree().create_timer(3.0)
 	timer.timeout.connect(_on_speedforce_timeout)
+	
+	print("Activate Speed Force!!!")
 
 func _on_speedforce_timeout() -> void:
 	if player:
